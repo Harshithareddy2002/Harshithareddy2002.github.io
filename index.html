@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            padding-top: 80px;
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .navbar-nav .nav-link {
+            color: #000;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #007bff;
+        }
+        .content-section {
+            padding: 100px 0;
+        }
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            background-color: #ccc;
+            border-radius: 50%;
+            background-image: url('Images/me.jpg'); 
+            background-size: cover;
+            background-position: center;
+        }
+        .about-section {
+            max-width: 800px;
+            margin: 50px auto;
+            text-align: center;
+        }
+        .project-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .contact-section {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 40px 20px;
+}
+
+.contact-info p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.contact-info a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-links img {
+    width: 50px; /* Adjust size as needed */
+    height: 50px;
+    border-radius: 50%;
+    background-color: pink;
+    padding: 10px;
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#home">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <div id="about" class="container about-section content-section">
+        <h1 class="fw-bold">About</h1>
+        <div class="d-flex justify-content-center">
+            <div class="profile-img mb-3"></div>
+        </div>
+        <p class="text-muted">
+            Hi! I’m Harshitha Reddy Kancherla . A Master’s student in Computer Science at Syracuse University, in my final semester, seeking full-time and internship opportunities in data-driven roles. Passionate about data analysis, machine learning, deep Learning and NLP, I enjoy transforming raw data into actionable insights.
+With expertise in Python, SQL, and visualization , I thrive on solving complex problems and building impactful solutions. Excited to collaborate, learn, and apply data to drive real-world decisions!
+        </p>
+    </div>
+
+    <!-- Projects Section -->
+    <div id="projects" class="container project-section content-section">
+        <h1 class="fw-bold text-center">Projects</h1>
+        <div class="row justify-content-center">
+            <!-- Project 1 -->
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <img src="Images/p1.png" class="project-img" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="project-title">
+                            <a href="https://github.com/Harshithareddy2002/Future-Sales-Prediction-and-Regression-Analysis" target="_blank" rel="noopener noreferrer">
+                                Future Sales Prediction - Analysis
+                            </a>
+                        </h5> 
+                        <p class="project-text">Predicting future sales of Supermarket using ML regression models like Random Forest and Gradient Boosting regressors. Through EDA, we identify key sales trends and influential features. 
+
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <img src="Images/p2.png" class="project-img" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="project-title">
+                            <a href="https://github.com/Harshithareddy2002/Machine-Learning-for-Diabetes-Diagnosis" target="_blank" rel="noopener noreferrer">
+                                Machine Learning for Diabetes Diagnosis
+                            </a>
+                        </h5>
+                        <p class="project-text">ML classification algorithms like SVM , KNN , Decision tree are used to predict whether a patient has diabetes also uses data visualization techniques to analyze and interpret dataset effectively</p>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <img src="Images/p3.png" class="project-img" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="project-title">
+                            <a href="https://github.com/Harshithareddy2002/Employee-Trends-Analysis-using-Tableau" target="_blank" rel="noopener noreferrer">
+                                Employee Data Analysis using Tableau
+                            </a>
+                        </h5>
+                        <p class="project-text">ML classification algorithms like SVM , KNN , Decision tree are used to predict whether a patient has diabetes also uses data visualization techniques to analyze and interpret dataset effectively</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div id="skills" class="container text-center content-section">
+        <h1 class="fw-bold">Skills</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-3">
+                <div class="skill-item">
+                    <img src="Images/1.png" alt="Python" class="img-fluid mb-3" width="120">
+                    <h5 class="fw-bold">Python</h5>
+                    <p class="text-muted"></p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="skill-item">
+                    <img src="Images/2.png" alt="Data Visualization" class="img-fluid mb-3" width="120">
+                    <h5 class="fw-bold">Data Visualization</h5>
+                    <p class="text-muted"></p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="skill-item">
+                    <img src="Images/3.png" alt="SQL" class="img-fluid mb-3" width="120">
+                    <h5 class="fw-bold">SQL</h5>
+                    <p class="text-muted"></p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="skill-item">
+                    <img src="Images/4.png" alt="Tableu" class="img-fluid mb-3" width="120">
+                    <h5 class="fw-bold">Tableu</h5>
+                    <p class="text-muted"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Contact Section -->
+    <div class="contact-section">
+        <h2>Contact Me</h2>
+    
+        
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/harshithareddyk" target="_blank">
+                <img src="Images/linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="mailto:harshithareddyk2002@gmail.com" target="_blank">
+                <img src="Images/mail.png" alt="G-Mail">
+            </a>
+            <a href="https://github.com/Harshithareddy2002" target="_blank">
+                <img src="Images/github.png" alt="GitHub">
+            </a>
+            <a href="tel:+3155758705" target="_blank">
+                <img src="Images/phone.png" alt="Medium">
+            </a>
+            
+        </div>
+    </div>
+    
+
+    <script>
+        $(document).ready(function () {
+            $("a.nav-link").on("click", function (event) {
+                event.preventDefault();
+                var target = $(this).attr("href");
+                $("html, body").animate({
+                    scrollTop: $(target).offset().top - 70
+                }, 800);
+            });
+        });
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
